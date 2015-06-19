@@ -9,7 +9,7 @@
         <!-- versionCode is optional and Android only -->
         <preference name="phonegap-version" value="3.5.0" />
 
-        <name>Phonegap Generic Boilerplate #5</name>
+        <name>Phonegap WebRTC</name>
         <description>Phonegap WebRTC</description>
         <author href="http://bsdmasterindex.com" email="jessemonroy650@yahoo.com">
         Jesse Monroy
