@@ -10,45 +10,45 @@
     .expose {visibility:visible;display:block;} /* Here for completeness only. */
     .copyright {padding:5px;align:left;font-style:italic;font-size:small;}
     #exitApp {margin:1em;float:right;}
-	#header {margin:0;padding:0;}
+    #header {margin:0;padding:0;}
     </style>
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/fastclick.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/zepto-1.1.6.js"></script>
     <script type="text/javascript">
-	function onButtonClick() {
-		alert("button clicked.");
-		//document.getElementById('sysinfo').innerHTML = JSON.stringify(Sysinfo, null, 4);
-	}
-	//
+    function onButtonClick() {
+        alert("button clicked.");
+        //document.getElementById('sysinfo').innerHTML = JSON.stringify(Sysinfo, null, 4);
+    }
+    //
     // Wait for PhoneGap to load
-	document.addEventListener("deviceready", onDeviceReady, false);
-	// Get rid of 300ms delay 
-	document.addEventListener('DOMContentLoaded', function() { FastClick.attach(document.body); }, false);
-	//
-	function onDeviceReady() {
-		//alert("device ready.");
-		// hide Exit button. They don't have one on iOS devices.
-		if (device.platform === "iOS") {
-			alert("got iOS");
-			// http://www.mzcart.com/javascript-how-to-addremove-css-class-from-a-dom-element/
-			document.getElementById('exitApp').classList.add("hidden");
-			/* deals with post-iOS-7 change that covers the status bar */
-			/* http://coenraets.org/blog/2013/09/phonegap-and-cordova-with-ios-7/ */
+    document.addEventListener("deviceready", onDeviceReady, false);
+    // Get rid of 300ms delay 
+    document.addEventListener('DOMContentLoaded', function() { FastClick.attach(document.body); }, false);
+    //
+    function onDeviceReady() {
+        //alert("device ready.");
+        // hide Exit button. They don't have one on iOS devices.
+        if (device.platform === "iOS") {
+            alert("got iOS");
+            // http://www.mzcart.com/javascript-how-to-addremove-css-class-from-a-dom-element/
+            document.getElementById('exitApp').classList.add("hidden");
+            /* deals with post-iOS-7 change that covers the status bar */
+            /* http://coenraets.org/blog/2013/09/phonegap-and-cordova-with-ios-7/ */
             document.body.style.marginTop = "20px";
-		}
-	}
-	//
-	function onLoad() {
-		//alert("body loaded.");
-	}
+        }
+    }
+    //
+    function onLoad() {
+        //alert("body loaded.");
+    }
     </script>
 </head>
 <body onload="onLoad()">
 <div id=header class="button button-block button-large">
-	<img align=left src=images/favicon-48x48.png>
-	PhoneGap WebRTC
-	<button id=exitApp onclick='navigator.app.exitApp()' class="button button-pill button-primary button-large" style="margin:0.1em;float:right;">Exit</button>
+    <img align=left src=images/favicon-48x48.png>
+    PhoneGap WebRTC
+    <button id=exitApp onclick='navigator.app.exitApp()' class="button button-pill button-primary button-large" style="margin:0.1em;float:right;">Exit</button>
 </div>
 
 <div id=content style="margin:1em;">content</div>
