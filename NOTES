@@ -1,0 +1,27 @@
+== NOTES related to WebRTC ==
+Date: 2015-06-20
+
+USING <br />
+https://crosswalk-project.org/documentation/webrtc.html
+
+=== Bookmarks ===
+
+# WebRTC Developer Tool Vendor Directory
+https://webrtchacks.com/vendor-directory/
+"""
+big list
+"""
+
+==== blogs ====
+# Cordova Plugin to add WebRTC Audio and Video
+http://www.tokbox.com/blog/cordova-plugin-to-add-webrtc-audio-and-video/
+
+# ApiRTC on Cordova
+http://apirtc.com/apirtc-on-cordova/
+
+==== libraries ====
+# songz/cordova-plugin-opentok
+https://github.com/songz/cordova-plugin-opentok
+
+# alongubkin/phonertc
+https://github.com/alongubkin/phonertc

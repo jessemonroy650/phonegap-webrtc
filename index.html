@@ -11,10 +11,21 @@
     .copyright {padding:5px;align:left;font-style:italic;font-size:small;}
     #exitApp {margin:1em;float:right;}
     #header {margin:0;padding:0;}
+    #credentials, #dialler, #messages {
+      clear: both;
+    }
+    #remote-video {
+      max-width: 300px;
+    }
+    #local-video {
+      max-width: 150px;
+    }
     </style>
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/fastclick.js"></script>
     <script type="text/javascript" charset="utf-8" src="js/zepto-1.1.6.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/peer.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/main.js"></script>
     <script type="text/javascript">
     function onButtonClick() {
         alert("button clicked.");
@@ -51,9 +62,42 @@
     <button id=exitApp onclick='navigator.app.exitApp()' class="button button-pill button-primary button-large" style="margin:0.1em;float:right;">Exit</button>
 </div>
 
-<div id=content style="margin:1em;">content</div>
 <button onclick='onButtonClick()' class="button button-pill button-action button-large">button</button>
-<pre id=info>pre</pre>
+
+<!-- WEBRTC START -->
+    <div id="credentials">
+      <p>
+        Connect as:
+        <input type="text" id="caller-id" size="15">
+        <button id="connect">Connect</button>
+      </p>
+    </div>
+
+    <div id="dialler" data-active="false">
+      <p>
+        Make call to:
+        <input type="select" id="recipient-id">
+        </input>
+        <button id="dial">Call</button>
+      </p>
+
+      <hr>
+
+      <p><strong>REMOTE:</strong></p>
+      <video id="remote-video" autoplay></video>
+
+      <hr>
+
+      <p><strong>LOCAL:</strong></p>
+      <video id="local-video" autoplay></video>
+    </div>
+
+    <hr>
+
+    <div id="messages">
+    </div>
+
+<!-- WEBRTC END -->
 
 <div class="copyright" style="padding:5px;align:left;font-style:italic;font-size:small;">
     <span id=copyright>Created by Jesus Monroy, Jr. &copy; 2015</span>
