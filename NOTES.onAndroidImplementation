@@ -31,7 +31,7 @@ http://developer.android.com/guide/topics/manifest/uses-permission-element.html
 LISTS all permission available:
 http://developer.android.com/guide/topics/manifest/uses-feature-element.html#permissions-features
 
-Needed also since phonegap turns it on.
+Needed also since phonegap turns it on; and adding via 'config-file' somehow turns it off.
 http://developer.android.com/training/basics/network-ops/connecting.html
 
 
