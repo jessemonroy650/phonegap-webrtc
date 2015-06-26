@@ -1,0 +1,34 @@
+== On Android Implementation ==
+Date: 2015-06-26
+
+
+=== NOTE #1 ===
+After getting it to work with 
+
+```
+        <gap:plugin name="org.apache.cordova.camera" />
+        <gap:plugin name="org.apache.cordova.media-capture" />
+```
+
+I decided to add the Android permission per:
+https://crosswalk-project.org/jira/browse/XWALK-2214?focusedCommentId=21763&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-21763
+
+Start Here:
+http://docs.build.phonegap.com/en_US/configuring_config_file_element.md.html#Config%20File%20Elements
+
+then: 
+http://developer.android.com/guide/topics/manifest/manifest-intro.html
+
+then ''Structure of the Manifest File'':
+http://developer.android.com/guide/topics/manifest/manifest-intro.html#filestruct
+"""
+Note, this is on the first level for the XML structure.
+"""
+
+click on:
+http://developer.android.com/guide/topics/manifest/uses-permission-element.html
+
+LISTS all permission available:
+http://developer.android.com/guide/topics/manifest/uses-feature-element.html#permissions-features
+
+NOTE: CHANGE_WIFI_MULTICAST_STATE is permission available.
