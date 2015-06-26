@@ -3,7 +3,6 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>PhoneGap WebRTC</title>
     <meta name="viewport" content="width=device-width">
-    <meta http-equiv="refresh" content="2; URL='http://apprtc.appspot.com'" />
     <link rel="stylesheet" href="css/buttons.css" />
     <style>
     body {margin:0px;font-size:large;}
@@ -31,6 +30,7 @@
     function onButtonClick() {
         alert("button clicked.");
         //document.getElementById('sysinfo').innerHTML = JSON.stringify(Sysinfo, null, 4);
+        var ref = window.open('https://apprtc.appspot.com/', '_blank', 'location=yes');
     }
     //
     // Wait for PhoneGap to load
