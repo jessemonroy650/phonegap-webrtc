@@ -19,9 +19,6 @@
         <gap:platform name="android" />
         <gap:config-file platform="android" parent="/manifest" mode="merge">
             <!-- Add Android extensions here. SEE: http://docs.build.phonegap.com/en_US/configuring_config_file_element.md.html#Config%20File%20Elements -->
-            <!-- On this, see 'NOTES.onAndroidImplementation NOTE #1' -->
-            <uses-permission android:name="android.permission.RECORD_AUDIO" />
-            <uses-permission android:name="android.permission.CAMERA" />
         </gap:config-file>
 
         <!-- iOS SECTION -->
@@ -38,8 +35,6 @@
         <gap:plugin name="org.apache.cordova.device" />
         <!-- popular alternative to the google chrome webview -->
         <gap:plugin name='org.crosswalk.engine' version='1.3.0' source='pgb'  />
-<!--
         <gap:plugin name="org.apache.cordova.camera" />
         <gap:plugin name="org.apache.cordova.media-capture" />
- -->
     </widget>
