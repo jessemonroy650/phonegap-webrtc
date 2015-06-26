@@ -33,7 +33,8 @@ http://developer.android.com/guide/topics/manifest/uses-feature-element.html#per
 
 Needed also since phonegap turns it on; and adding via 'config-file' somehow turns it off.
 http://developer.android.com/training/basics/network-ops/connecting.html
-
+Also:
+http://developer.android.com/training/connect-devices-wirelessly/wifi-direct.html
 
 NOTE: Unrelated to this CHANGE_WIFI_MULTICAST_STATE is permission available.
 
