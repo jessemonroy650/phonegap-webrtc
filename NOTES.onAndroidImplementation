@@ -31,4 +31,9 @@ http://developer.android.com/guide/topics/manifest/uses-permission-element.html
 LISTS all permission available:
 http://developer.android.com/guide/topics/manifest/uses-feature-element.html#permissions-features
 
-NOTE: CHANGE_WIFI_MULTICAST_STATE is permission available.
+Needed also since phonegap turns it on.
+http://developer.android.com/training/basics/network-ops/connecting.html
+
+
+NOTE: Unrelated to this CHANGE_WIFI_MULTICAST_STATE is permission available.
+
