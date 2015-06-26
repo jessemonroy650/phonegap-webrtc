@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   // PeerJS server location
-  var SERVER_IP = '192.168.0.25';
+  var SERVER_IP = '192.168.1.180';
   var SERVER_PORT = 9000;
 
   // DOM elements manipulated as user interacts with the app
