@@ -38,3 +38,11 @@ http://developer.android.com/training/connect-devices-wirelessly/wifi-direct.htm
 
 NOTE: Unrelated to this CHANGE_WIFI_MULTICAST_STATE is permission available.
 
+Some Tests recommended.
+https://crosswalk-project.org/jira/browse/XWALK-2214?focusedCommentId=21763&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-21763
+
+Turns audio video on of browser
+https://apprtc.appspot.com/
+
+APKs to try
+https://download.01.org/crosswalk/releases/crosswalk/android/beta/7.36.154.12/arm/
