@@ -19,7 +19,7 @@
         <gap:platform name="android" />
         <gap:config-file platform="android" parent="/manifest" mode="merge">
             <!-- Add Android extensions here. SEE: http://docs.build.phonegap.com/en_US/configuring_config_file_element.md.html#Config%20File%20Elements -->
-            <!-- On this, see 'NOTES.onAndroidImplementation NOTE #1'
+            <!-- On this, see 'NOTES.onAndroidImplementation NOTE #1' -->
             <uses-permission android:name="android.permission.RECORD_AUDIO" />
             <uses-permission android:name="android.permission.CAMERA" />
         </gap:config-file>
