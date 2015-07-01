@@ -51,5 +51,4 @@
         <gap:plugin name="org.apache.cordova.media-capture" />
  -->
         <gap:plugin name="org.apache.cordova.inappbrowser" source="npm" />
-        <access origin="*" />
     </widget>
